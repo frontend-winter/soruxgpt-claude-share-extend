@@ -1,8 +1,8 @@
 # Claude 项目体验 地址
-用户端：https://claude-demo2.ainx.cc
-账号密码：admin/123456
-后台：https://claude-demo2.ainx.cc/u/login
-账号密码：admin/123456
+- 用户端：https://claude-demo2.ainx.cc
+- 账号密码：admin/123456
+- 后台：https://claude-demo2.ainx.cc/xyhelper
+- 账号密码：admin/123456
 # soruxgpt-claude-share-deploy-extend
 
 soruxgpt-claude-share-deploy 二开镜像
