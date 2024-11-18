@@ -136,4 +136,4 @@ soruxgpt-claude-share-deploy 二开镜像
 - SUIT_FOR_SHARE_IN_SESSION: 是否使用默认 SESSION，以兼容其他项目
 - YES_CAPTCHA: 打码密钥
 
-# Claude镜像购买联系wx：frontend-winter
+# Claude镜像部署遇到问题？wx联系：frontend-winter
