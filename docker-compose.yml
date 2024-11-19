@@ -24,7 +24,7 @@ services:
     image: epicmo/claude-share-server:latest
     restart: always
     ports:
-      - 8400:8001
+      - 8300:8001
     environment:
       TZ: Asia/Shanghai
       CHATPROXY: ""
@@ -41,7 +41,7 @@ services:
     image: fewinter/claude003-share-server-extend:latest
     restart: always
     ports:
-      - 8401:8002
+      - 8301:8002
     environment:
       TZ: Asia/Shanghai
       CHATPROXY: ""
@@ -61,6 +61,8 @@ services:
       PER: "3h" # 限制周期 1s, 1m, 1h, 1d, 1w, 1y
       OLIMIT: 1 # 限制免费模型 每个userToken允许的次数
       OPER: "24h" # 限制免费模型周期 0.05｜3分钟，0.1|6分钟，0.5｜30分钟，1｜60分钟，以此类推
+    volumes:
+      - ./config.yaml:/app/config.yaml
     labels:
       - "com.centurylinklabs.watchtower.scope=epicmo-claude-share-server"
   watchtower:
