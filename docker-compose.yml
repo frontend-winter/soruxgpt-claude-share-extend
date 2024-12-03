@@ -24,7 +24,7 @@ services:
     image: epicmo/claude-share-server:latest
     restart: always
     ports:
-      - 8300:8001
+      - 127.0.0.1:8300:8001
     environment:
       TZ: Asia/Shanghai
       CHATPROXY: ""
@@ -41,7 +41,7 @@ services:
     image: fewinter/claude003-share-server-extend:latest
     restart: always
     ports:
-      - 8301:8002
+      - 127.0.0.1:8301:8002
     environment:
       TZ: Asia/Shanghai
       CHATPROXY: ""
