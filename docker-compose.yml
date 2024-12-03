@@ -36,7 +36,8 @@ services:
       - ./data/soruxgpt-claude-share-server/:/app/data/
     labels:
       - "com.centurylinklabs.watchtower.scope=epicmo-claude-share-server"
-
+    depends_on:
+      - soruxgpt-claude-share-server
   soruxgpt-claude-share-server-extend:
     image: fewinter/claude003-share-server-extend:latest
     restart: always
